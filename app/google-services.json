@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "3827469269",
+    "firebase_url": "https://strengthen-chemistry.firebaseio.com",
+    "project_id": "strengthen-chemistry",
+    "storage_bucket": "strengthen-chemistry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3827469269:android:9bbd863cef6fd560",
+        "android_client_info": {
+          "package_name": "messj.strengthenchemistry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3827469269-asmhkjtupmts33hj43an956k3lcn6lgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYPzM_AxcQMa-Mx8YI96NmJvONIuv4YgU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

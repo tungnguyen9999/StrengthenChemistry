@@ -11,18 +11,33 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnSelectLesson, btnChemistryStory, btnAccSetting;
+    private Button btnSelectClass10, btnSelectClass11, btnSelectClass12, btnChemistryStory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSelectLesson = (Button) findViewById(R.id.btnSelectLesson);
+        btnSelectClass10 = (Button) findViewById(R.id.btnSelectClass10);
+        btnSelectClass11 = (Button) findViewById(R.id.btnSelectClass11);
+        btnSelectClass12 = (Button) findViewById(R.id.btnSelectClass12);
         btnChemistryStory = (Button) findViewById(R.id.btnChemistryStory);
-        btnAccSetting = (Button) findViewById(R.id.btnAccSetting);
 
-        btnSelectLesson.setOnClickListener(new View.OnClickListener() {
+        btnSelectClass10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnSelectClass11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnSelectClass12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -33,12 +48,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            }
-        });
-
-        btnAccSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
             }
         });
     }

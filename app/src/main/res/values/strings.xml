@@ -29,6 +29,14 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="btn_select_lesson">Select Lesson</string>
-    <string name="btn_chemistry_story">Chemistry Stories</string>
     <string name="btn_account_setting">Account Setting</string>
+
+    <!--tungnt-->
+    <string name="btn_chemistry_story">Chuyện vui hóa học</string>
+    <string name="class10_lesson">Chuyên đề hóa lớp 10</string>
+    <string name="class11_lesson">Chuyên đề hóa lớp 11</string>
+    <string name="class12_lesson">Chuyên đề hóa lớp 12</string>
+    <string name="lesson_content">Lý thuyết</string>
+    <string name="lesson_test">Thực hành</string>
+    <string name="lesson_tip">Mẹo</string>
 </resources>

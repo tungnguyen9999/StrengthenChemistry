@@ -5,11 +5,27 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnSelectLesson"
+        android:id="@+id/btnSelectClass10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/btn_select_lesson"
+        android:text="@string/class10_lesson"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnSelectClass11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/class11_lesson"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnSelectClass12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/class12_lesson"
         android:textSize="15dp" />
 
     <Button
@@ -18,14 +34,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/btn_chemistry_story"
-        android:textSize="15dp" />
-
-    <Button
-        android:id="@+id/btnAccSetting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/btn_account_setting"
         android:textSize="15dp" />
 
 </LinearLayout>

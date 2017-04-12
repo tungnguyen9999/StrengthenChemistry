@@ -1,4 +1,4 @@
-package messj.strengthenchemistry;
+package messj.strengthenchemistry.useractivity;
 
 /**
  * Created by USER on 4/5/2017.

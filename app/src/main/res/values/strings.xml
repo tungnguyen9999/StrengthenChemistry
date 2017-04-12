@@ -39,4 +39,27 @@
     <string name="lesson_content">Lý thuyết</string>
     <string name="lesson_test">Thực hành</string>
     <string name="lesson_tip">Mẹo</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Chuyên đề hóa lớp 10-->
+    <string name="class10_ch1">Nguyên tử</string>
+    <string name="class10_ch2">Liên kết hóa học</string>
+    <string name="class10_ch3">Bảng tuần hoàn các nguyên tố hóa học và Định luật tuần hoàn</string>
+    <string name="class10_ch4">Phản ứng oxy hóa - khử</string>
+    <string name="class10_ch5">Nhóm Halogen</string>
+    <string name="class10_ch6">Oxi - Lưu huỳnh</string>
+    <string name="class10_ch7">Tốc độ phản ứng và cân bằng hóa học</string>
+
+    <!--Chuyên đề hóa lớp 11-->
+    <string name="class11_ch1">Sự điện li</string>
+    <string name="class11_ch2">Điện phân dung dịch</string>
+    <string name="class11_ch3">Nhóm nitơ</string>
+    <string name="class11_ch4">Nhóm cacbon</string>
+    <string name="class11_ch5">Đại cương về hóa học hữu cơ</string>
+    <string name="class11_ch6">Hiđrocacbon no</string>
+    <string name="class11_ch7">Hiđrocacbon không no</string>
+    <string name="class11_ch8">Hiđrocacbon thơm - Nguồn hiđrocacbon thiên nhiên</string>
+    <string name="class11_ch9">Dẫn xuất Halogen</string>
+    <string name="class11_ch10">Ancol - Phenol</string>
+    <string name="class11_ch11">Anđehit - Xeton - Axit cacboxylic</string>
 </resources>

@@ -1,9 +1,15 @@
 package messj.strengthenchemistry;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import messj.strengthenchemistry.chooserlistitem.ListItemActivity;
 
 /**
  * Created by USER on 4/5/2017.
@@ -26,21 +32,27 @@ public class MainActivity extends AppCompatActivity {
         btnSelectClass10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent data = new Intent(MainActivity.this, ListItemActivity.class);
+                data.putExtra("selectionKey", btnSelectClass10.getId());
+                startActivity(data);
             }
         });
 
         btnSelectClass11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent data = new Intent(MainActivity.this, ListItemActivity.class);
+                data.putExtra("selectionKey", btnSelectClass11.getId());
+                startActivity(data);
             }
         });
 
         btnSelectClass12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent data = new Intent(MainActivity.this, ListItemActivity.class);
+                data.putExtra("selectionKey", btnSelectClass12.getId());
+                startActivity(data);
             }
         });
 

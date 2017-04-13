@@ -26,20 +26,25 @@ public class ListItemActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chooser_list_item);
+
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
         Bundle extras = getIntent().getExtras();
         switch (extras.getInt("selectionKey")) {
             case R.id.btnSelectClass10:
+                setTitle(R.string.class10_lesson);
                 makeClass10SectionList();
                 Toast.makeText(getApplicationContext(), "đã chọn chủ đề hóa lớp 10", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSelectClass11:
+                setTitle(R.string.class11_lesson);
                 makeClass11SectionList();
                 Toast.makeText(getApplicationContext(), "đã chọn chủ đề hóa lớp 11", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSelectClass12:
+                setTitle(R.string.class12_lesson);
+                makeClass12SectionList();
                 Toast.makeText(getApplicationContext(), "đã chọn chủ đề hóa lớp 12", Toast.LENGTH_SHORT).show();
                 break;
         }
@@ -87,25 +92,38 @@ public class ListItemActivity extends AppCompatActivity {
         dataModels.add(new DataModel(getResources().getString(R.string.class11_ch11), "September 15, 2009"));
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void makeClass12SectionList() {
+        dataModels = new ArrayList<>();
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch1), "September 23, 2008"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch2), "February 9, 2009"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch3), "April 27, 2009"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch4), "September 15, 2009"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch5), "October 26, 2009"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch6), "May 20, 2010"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch7), "December 6, 2010"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch8), "September 23, 2008"));
+        dataModels.add(new DataModel(getResources().getString(R.string.class12_ch9), "February 9, 2009"));
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

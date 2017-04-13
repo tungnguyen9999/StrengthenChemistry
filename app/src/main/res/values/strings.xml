@@ -62,4 +62,15 @@
     <string name="class11_ch9">Dẫn xuất Halogen</string>
     <string name="class11_ch10">Ancol - Phenol</string>
     <string name="class11_ch11">Anđehit - Xeton - Axit cacboxylic</string>
+
+    <!--Chuyên đề hóa lớp 12-->
+    <string name="class12_ch1">Este - lipit</string>
+    <string name="class12_ch2">Cacbohiđrat</string>
+    <string name="class12_ch3">Amin - Amino Axit - Protein</string>
+    <string name="class12_ch4">Polime và vật liệu Polime</string>
+    <string name="class12_ch5">Đại cương về kim loại</string>
+    <string name="class12_ch6">Kim loại kiềm, kiềm thổ và nhôm</string>
+    <string name="class12_ch7">Crom - Sắt - Đồng và một số kim loại khác</string>
+    <string name="class12_ch8">Nhận biết một số chất vô cơ</string>
+    <string name="class12_ch9">Hóa học và vấn đề phát triển kinh tế, xã hội, môi trường</string>
 </resources>

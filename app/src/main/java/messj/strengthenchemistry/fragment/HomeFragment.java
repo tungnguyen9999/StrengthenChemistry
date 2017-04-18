@@ -10,16 +10,6 @@ import java.util.List;
 
 import org.json.JSONObject;
 
-import com.androidopentutorials.imageslideshow.R;
-import com.androidopentutorials.imageslideshow.adapter.ImageSlideAdapter;
-import com.androidopentutorials.imageslideshow.bean.Product;
-import com.androidopentutorials.imageslideshow.json.GetJSONObject;
-import com.androidopentutorials.imageslideshow.json.JsonReader;
-import com.androidopentutorials.imageslideshow.utils.CheckNetworkConnection;
-import com.androidopentutorials.imageslideshow.utils.CirclePageIndicator;
-import com.androidopentutorials.imageslideshow.utils.PageIndicator;
-import com.androidopentutorials.imageslideshow.utils.TagName;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -36,6 +26,15 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import messj.strengthenchemistry.R;
+import messj.strengthenchemistry.bean.Product;
+import messj.strengthenchemistry.json.GetJSONObject;
+import messj.strengthenchemistry.json.JsonReader;
+import messj.strengthenchemistry.listlessoncontent.ImageSlideAdapter;
+import messj.strengthenchemistry.utils.CheckNetworkConnection;
+import messj.strengthenchemistry.utils.CirclePageIndicator;
+import messj.strengthenchemistry.utils.PageIndicator;
 
 public class HomeFragment extends Fragment {
 
@@ -71,7 +70,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.temp_content_viewer, container, false);
         findViewById(view);
 
         mIndicator.setOnPageChangeListener(new PageChangeListener());
@@ -140,8 +139,7 @@ public class HomeFragment extends Fragment {
         if (products == null) {
             sendRequest();
         } else {
-            mViewPager.setAdapter(new ImageSlideAdapter(activity, products,
-                    HomeFragment.this));
+            mViewPager.setAdapter(new ImageSlideAdapter(activity, products, HomeFragment.this));
 
             mIndicator.setViewPager(mViewPager);
             imgNameTxt.setText(""
@@ -289,8 +287,7 @@ public class HomeFragment extends Fragment {
                     if (result != null) {
                         if (products != null && products.size() != 0) {
 
-                            mViewPager.setAdapter(new ImageSlideAdapter(
-                                    activity, products, HomeFragment.this));
+                            mViewPager.setAdapter(new ImageSlideAdapter(activity, products, HomeFragment.this));
 
                             mIndicator.setViewPager(mViewPager);
                             imgNameTxt.setText(""

@@ -43,9 +43,31 @@
 
     <!--Chuyên đề hóa lớp 10-->
     <string name="class10_ch1">Nguyên tử</string>
+    <string name="class10_ch1_lesson1_1">Thành phần nguyên tử</string>
+    <string name="class10_ch1_lesson1_2">Hạt nhân nguyên tử - Nguyên tố hóa học - Đồng vị</string>
+    <string name="class10_ch1_lesson1_3">Cấu tạo vỏ nguyên tử</string>
+    <string name="class10_ch1_lesson1_4">Cấu hình electron</string>
+
     <string name="class10_ch2">Liên kết hóa học</string>
-    <string name="class10_ch3">Bảng tuần hoàn các nguyên tố hóa học và Định luật tuần hoàn</string>
+    <string name="class10_ch2_lesson2_1">Liên kết ion</string>
+    <string name="class10_ch2_lesson2_2">Liên kết cộng hóa trị</string>
+    <string name="class10_ch2_lesson2_3">Liên kết kim loại</string>
+    <string name="class10_ch2_lesson2_4">Tinh thể và mạng tinh thể</string>
+    <string name="class10_ch2_lesson2_5">Sự xen phủ giữa các orbitan nguyên tử</string>
+
+    <string name="class10_ch3">Bảng tuần hoàn các nguyên tố hóa học (NTHH) và Định luật tuần hoàn</string>
+    <string name="class10_ch3_lesson3_1">Bảng tuần hoàn các nguyên tố hóa học</string>
+    <string name="class10_ch3_lesson3_2">Sự biến đổi tuần hoàn cấu hình electron nguyên tử của các NTHH</string>
+    <string name="class10_ch3_lesson3_3">Định luật tuần hoàn - Sự biến đổi tuần hoàn tính chất của các NTHH</string>
+    <string name="class10_ch3_lesson3_4">Ý nghĩa của bảng tuần hoàn</string>
+
     <string name="class10_ch4">Phản ứng oxy hóa - khử</string>
+    <string name="class10_ch4_lesson4_1">Phân loại phản ứng trong hóa vô cơ</string>
+    <string name="class10_ch4_lesson4_2">Phản ứng oxy hóa - khử</string>
+    <string name="class10_ch4_lesson4_3">Định lượng mức độ oxi hóa - khử</string>
+    <string name="class10_ch4_lesson4_4">Cân bằng phản ứng oxy hóa - khử </string>
+    <string name="class10_ch4_lesson4_5">Phương trình ion thu gọn của phản ứng oxy hóa - khử</string>
+
     <string name="class10_ch5">Nhóm Halogen</string>
     <string name="class10_ch6">Oxi - Lưu huỳnh</string>
     <string name="class10_ch7">Tốc độ phản ứng và cân bằng hóa học</string>

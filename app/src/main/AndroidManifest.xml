@@ -22,6 +22,7 @@
 
         <activity android:name=".chooserlistitem.ListItemActivity"></activity>
         <activity android:name=".ItemSelectActivity"></activity>
+        <activity android:name=".listlessoncontent.ListContentActivity"></activity>
     </application>
 
 </manifest>

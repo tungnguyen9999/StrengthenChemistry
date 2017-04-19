@@ -12,6 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import messj.strengthenchemistry.bean.Product;
+import messj.strengthenchemistry.utils.TagName;
 
 public class JsonReader {
 

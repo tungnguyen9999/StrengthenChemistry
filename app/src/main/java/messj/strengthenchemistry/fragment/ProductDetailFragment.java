@@ -18,13 +18,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.androidopentutorials.imageslideshow.R;
-import com.androidopentutorials.imageslideshow.bean.Product;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
-import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+
+import messj.strengthenchemistry.R;
+import messj.strengthenchemistry.bean.Product;
 
 public class ProductDetailFragment extends Fragment {
 
@@ -46,9 +47,9 @@ public class ProductDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
         activity = getActivity();
         options = new DisplayImageOptions.Builder()
-                .showImageOnFail(R.drawable.ic_launcher)
-                .showStubImage(R.drawable.ic_launcher)
-                .showImageForEmptyUri(R.drawable.ic_launcher).cacheInMemory()
+                .showImageOnFail(R.mipmap.ic_launcher)
+                .showStubImage(R.mipmap.ic_launcher)
+                .showImageForEmptyUri(R.mipmap.ic_launcher).cacheInMemory()
                 .cacheOnDisc().build();
 
         imageListener = new ImageDisplayListener();
@@ -58,7 +59,7 @@ public class ProductDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_pdt_detail, container,
+        View view = inflater.inflate(R.layout.temp_image_selected_viewer, container,
                 false);
         findViewById(view);
 

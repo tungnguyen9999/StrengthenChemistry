@@ -39,8 +39,8 @@ public class AppData extends Application {
 
     public static void initImageLoader(Context context) {
         DisplayImageOptions options = new DisplayImageOptions.Builder()
-                .showImageForEmptyUri(R.drawable.ic_empty)
-                .showImageOnFail(R.drawable.ic_error).resetViewBeforeLoading()
+                .showImageForEmptyUri(R.mipmap.ic_launcher)
+                .showImageOnFail(R.mipmap.ic_launcher).resetViewBeforeLoading()
                 .cacheOnDisc().imageScaleType(ImageScaleType.EXACTLY)
                 .bitmapConfig(Bitmap.Config.RGB_565)
                 .displayer(new FadeInBitmapDisplayer(300)).build();

@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    /*
+        - Android 6.0 release removes support for the Apache HTTP client
+        - To continue using the Apache HTTP APIs, you must first declare the following compile-time dependency in your build.gradle file: useLibrary 'org.apache.http.legacy'
+     */
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -30,6 +36,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.google.firebase:firebase-auth:9.4.0'
     compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/gdata-base-1.0.jar')
+    compile files('libs/gdata-client-1.0.jar')
+    compile files('libs/gdata-photos-1.0.jar')
+    compile files('libs/dropbox-android-sdk-1.6.3.jar')
 }
 
 apply plugin: 'com.google.gms.google-services'

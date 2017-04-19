@@ -11,6 +11,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 
+import messj.strengthenchemistry.fragment.HomeFragment;
+import messj.strengthenchemistry.fragment.ProductDetailFragment;
+
 public class LessonContentSelectActivity extends FragmentActivity {
 
     private Fragment contentFragment;
@@ -87,7 +90,7 @@ public class LessonContentSelectActivity extends FragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 }

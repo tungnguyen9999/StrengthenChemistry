@@ -35,6 +35,16 @@ import messj.strengthenchemistry.listlessoncontent.ImageSlideAdapter;
 import messj.strengthenchemistry.utils.CheckNetworkConnection;
 import messj.strengthenchemistry.utils.CirclePageIndicator;
 import messj.strengthenchemistry.utils.PageIndicator;
+import messj.strengthenchemistry.utils.TagName;
+
+import java.io.File;
+import java.net.URL;
+
+import com.google.gdata.client.*;
+import com.google.gdata.client.photos.*;
+import com.google.gdata.data.*;
+import com.google.gdata.data.media.*;
+import com.google.gdata.data.photos.*;
 
 public class HomeFragment extends Fragment {
 
@@ -65,6 +75,23 @@ public class HomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activity = getActivity();
+
+        requestAlbumFromPicasa();
+    }
+
+    public void requestAlbumFromPicasa() {
+        try {
+            PicasawebService myService = new PicasawebService("Get photo from Picase Web Albums");
+            URL feedUrl = new URL("https://picasaweb.google.com/data/feed/api/user/tungosper@gmail.com/albumid/6410352951124751041");
+
+            UserFeed myUserFeed = myService.getFeed(feedUrl, UserFeed.class);
+
+            for (AlbumEntry myAlbum : myUserFeed.getAlbumEntries()) {
+                System.out.println(myAlbum.getTitle().getPlainText());
+            }
+        } catch (Exception e) {
+
+        }
     }
 
     @Override

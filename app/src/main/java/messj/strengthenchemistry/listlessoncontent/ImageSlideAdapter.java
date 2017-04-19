@@ -24,9 +24,13 @@ import android.widget.ImageView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
 import messj.strengthenchemistry.R;
 import messj.strengthenchemistry.bean.Product;
+import messj.strengthenchemistry.fragment.HomeFragment;
+import messj.strengthenchemistry.fragment.ProductDetailFragment;
 
 public class ImageSlideAdapter extends PagerAdapter {
     ImageLoader imageLoader = ImageLoader.getInstance();
@@ -42,9 +46,9 @@ public class ImageSlideAdapter extends PagerAdapter {
         this.homeFragment = homeFragment;
         this.products = products;
         options = new DisplayImageOptions.Builder()
-                .showImageOnFail(R.drawable.ic_error)
-                .showStubImage(R.drawable.ic_launcher)
-                .showImageForEmptyUri(R.drawable.ic_empty).cacheInMemory()
+                .showImageOnFail(R.mipmap.ic_launcher)
+                .showStubImage(R.mipmap.ic_launcher)
+                .showImageForEmptyUri(R.mipmap.ic_launcher).cacheInMemory()
                 .cacheOnDisc().build();
 
         imageListener = new ImageDisplayListener();
@@ -59,7 +63,7 @@ public class ImageSlideAdapter extends PagerAdapter {
     public View instantiateItem(ViewGroup container, final int position) {
         LayoutInflater inflater = (LayoutInflater) activity
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.vp_image, container, false);
+        View view = inflater.inflate(R.layout.temp_image_container, container, false);
 
         ImageView mImageView = (ImageView) view
                 .findViewById(R.id.image_display);

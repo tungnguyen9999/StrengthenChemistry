@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".AppData"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,10 +16,6 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-
-                <!--add below line for dropbox api working: mkymswyt61jbyym is app key-->
-                <data android:scheme="mkymswyt61jbyym" />
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,6 +25,7 @@
         <activity android:name=".chooserlistitem.ListItemActivity"></activity>
         <activity android:name=".ItemSelectActivity"></activity>
         <activity android:name=".listlessoncontent.ListContentActivity"></activity>
+        <activity android:name=".LessonContentSelectActivity"></activity>
     </application>
 
 </manifest>

@@ -10,6 +10,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import messj.strengthenchemistry.AppData;
+import messj.strengthenchemistry.LessonContentSelectActivity;
 import messj.strengthenchemistry.R;
 import messj.strengthenchemistry.chooserlistitem.DataModel;
 import messj.strengthenchemistry.chooserlistitem.ListItemAdapter;
@@ -47,6 +49,8 @@ public class ListContentActivity extends AppCompatActivity {
 
                 Snackbar.make(view, dataModel.getName() + "\n", Snackbar.LENGTH_LONG)
                         .setAction("No action", null).show();
+
+                startActivity(new Intent(ListContentActivity.this, LessonContentSelectActivity.class));
             }
         });
     }

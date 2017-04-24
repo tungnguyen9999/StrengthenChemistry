@@ -1,17 +1,17 @@
 package messj.strengthenchemistry.listlessoncontent;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import messj.strengthenchemistry.AppData;
-import messj.strengthenchemistry.LessonContentSelectActivity;
 import messj.strengthenchemistry.R;
 import messj.strengthenchemistry.chooserlistitem.DataModel;
 import messj.strengthenchemistry.chooserlistitem.ListItemAdapter;
@@ -50,7 +50,13 @@ public class ListContentActivity extends AppCompatActivity {
                 Snackbar.make(view, dataModel.getName() + "\n", Snackbar.LENGTH_LONG)
                         .setAction("No action", null).show();
 
-                startActivity(new Intent(ListContentActivity.this, LessonContentSelectActivity.class));
+                // make circle view pager for each item in list
+//                startActivity(new Intent(ListContentActivity.this, LessonContentSelectActivity.class));
+
+                // call ContentSelectedActivity
+                Intent i = new Intent(ListContentActivity.this, ContentSelectedActivity.class);
+                i.putExtra("lessonKey", dataModel.getKey());
+                startActivity(i);
             }
         });
     }

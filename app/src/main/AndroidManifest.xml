@@ -26,6 +26,7 @@
         <activity android:name=".ItemSelectActivity"></activity>
         <activity android:name=".listlessoncontent.ListContentActivity"></activity>
         <activity android:name=".LessonContentSelectActivity"></activity>
+        <activity android:name=".listlessoncontent.ContentSelectedActivity"></activity>
     </application>
 
 </manifest>

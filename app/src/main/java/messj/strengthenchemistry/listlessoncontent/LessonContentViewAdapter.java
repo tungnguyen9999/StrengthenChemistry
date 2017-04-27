@@ -57,7 +57,7 @@ public class LessonContentViewAdapter extends ArrayAdapter<Object> implements Vi
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.content_selected_item, parent, false);
-            viewHolder.info = (ImageView) convertView.findViewById(R.id.item_info);
+            viewHolder.info = (ImageView) convertView.findViewById(R.id.content_info);
 
             result = convertView;
             convertView.setTag(viewHolder);

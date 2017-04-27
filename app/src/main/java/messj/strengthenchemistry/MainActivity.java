@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import messj.strengthenchemistry.chooserlistitem.ListItemActivity;
+import messj.strengthenchemistry.utils.FileUtils;
 
 /**
  * Created by USER on 4/5/2017.
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FileUtils.requestWriteStoragePermission(this);
 
         btnSelectClass10 = (Button) findViewById(R.id.btnSelectClass10);
         btnSelectClass11 = (Button) findViewById(R.id.btnSelectClass11);
